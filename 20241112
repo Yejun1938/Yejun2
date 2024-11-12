@@ -1,0 +1,114 @@
+#include <stdio.h>
+//int main()
+//{
+//	int n;
+//	
+//	n = 2;
+//	switch (3)
+//	{
+//	case 0:
+//		printf("영입니다.");
+//	case 1:
+//		printf("일입니다.");
+//	case 2:
+//		printf("이입니다.");
+//    case 3:
+//		printf("삼입니다."); 
+//	}
+//}
+
+
+//int main()
+//{
+//	int age;
+//	scanf("%d", &age);
+//	switch(age/10)
+//	{
+//		case 0:
+//			printf("유소년");
+//			break;
+//		case 1:
+//			 printf("청소년");
+//			 break;
+//		case 2:
+//			printf("청년");
+//			break;
+//		case 3:
+//			printf("중년"); 
+//			break;
+//	}
+//}
+
+
+//int main()
+//{
+//	int a;
+//	int b;
+//	int c;
+//	int d;
+//	scanf("%d\n%d\n%d\n%d", &a, &b, &c, &d);
+//	int sum = a+b+c+d;
+//	int avg = sum/4;
+//	
+//	switch(avg/10)
+//	{
+//		case 9:
+//			printf("참 잘했어요.");
+//			break;
+//		case 8:
+//			printf("잘했어요.");
+//			break;
+//		case 7:
+//			printf("화이팅.");
+//			break;
+//		default:
+//			printf("힘내요, 할 수 있어요.");
+//			break; 
+//	}
+//}
+
+//int main()
+//{
+//	int i;
+//	
+//	i = 1;
+//	while (i<=10)
+//	{
+//		printf("%d ", i);
+//		i++;
+//	}
+//}
+
+//int main()
+//{
+//	int a = 0;
+//	int b = 0;
+//	int i=1;
+//	while(i<=10)
+//	{
+//		if(i%2==0)
+//		{
+//			a+=i;
+//		}
+//		else
+//		{
+//			b+=i;
+//		}
+//		i++;
+//	}
+//	printf("%d", a);
+//	printf("%d", b);
+//}
+
+//int main()
+//{
+//	int n;
+//	scanf("%d", &n);
+//	for(int i = 1; i<=n; i++)
+//	{
+//		if(i%3==0)
+//		{
+//			printf("%d", i);
+//		}
+//	}
+//}
