@@ -1,0 +1,62 @@
+//#include <stdio.h>
+//int main()
+//{
+//	int z=0;
+//	int a;
+//	int b;
+//	int c;
+//	int d;
+//	int e;
+//	int f;
+//	int g;
+//	int h;
+//	int i;
+//	int j;
+//	scanf("%d\n", &a);
+//	scanf("%d\n", &b);
+//	scanf("%d\n", &c);
+//	scanf("%d\n", &d);
+//	scanf("%d\n", &e);
+//	scanf("%d\n", &f);
+//	scanf("%d\n", &g);
+//	scanf("%d\n", &h);
+//	scanf("%d\n", &i);
+//	scanf("%d\n", &j);
+//	if(b>a)
+//	{
+//		z=b;
+//	}
+//	else if(c>b)
+//	{
+//		z=c;
+//	}
+//	else if(d>c)
+//	{
+//		z=d;
+//	}
+//	else if(e>d)
+//	{
+//		z=e;
+//	}
+//	else if(f>e)
+//	{
+//		z=f;
+//	}
+//	else if(g>f)
+//	{
+//		z=g;
+//	}
+//	else if(h>g)
+//	{
+//		z=h;
+//	}
+//	else if(i>h)
+//	{
+//		z=i;
+//	}
+//	else if(j>i)
+//	{
+//		z=j;
+//	}
+//	printf("%d", z);
+//}
