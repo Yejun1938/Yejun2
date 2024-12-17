@@ -1,0 +1,102 @@
+#include <stdio.h>
+//int main()
+//{
+//	double height[4];
+//	int j = 2;
+//	
+//	height[0] = 145.7;
+//	height[1] = 156.3;
+//	height[j] = 147.89;
+//	j++;
+//	height[j] = 159.4;
+//	printf("%lf", height[0]);
+//}
+
+//int main()
+//{
+//	int ar[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+//	int br[10];
+//	
+//	for(int i = 0;i<=9;i++)
+//	{
+//		if(ar[i]%2==1)
+//		printf("%d ", ar[i]);
+//	}
+//}
+
+
+//#include <stdio.h>
+//int main()
+//{
+//	
+//	char c; int i; long l; float f; double d;
+//	
+//	printf("%d %d %d %d %d\n", sizeof(c), sizeof(i), sizeof(l),sizeof(f), sizeof(d));
+//	printf("%d %d %d\n", sizeof(char), sizeof(int), sizeof(long));
+//	printf("%d %d\n", sizeof(float), sizeof(double));
+//	printf("%d %d\n", sizeof(153), sizeof(5.2));
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	int n;
+//	int ar[100];
+//	scanf("%d", &n);
+//	
+//	for(int i=0;i<n;i++)
+//	{
+//		scanf("%d", &ar[i]);
+//	}
+//	
+//	int v;
+//	int count=0;
+//	scanf("%d", &v);
+//	for(int i=0;i<n;i++)
+//	{
+//		if(ar[i]==v)
+//		{
+//			count++;
+//		}
+//	}
+//	printf("%d", count);
+//}
+
+
+//#include <stdio.h>
+//int main()
+//{
+//	int count = 0;
+//	int a[10] = {5,2,1,5,6,7,8,9,4,2};
+//	for(int i = 0;i<10;i++)
+//	{
+//		count += a[i];
+//	}
+//	printf("%d", count);
+//	
+//}
+
+
+#include <stdio.h>
+int main()
+{
+	int n;
+	int ar[100];
+	scanf("%d", &n);
+	for(int i = 0;i<n;i++)
+	{
+		scanf("%d", &ar[i]);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
