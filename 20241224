@@ -1,0 +1,104 @@
+//#include <stdio.h>
+//int main()
+//{
+//    int ar[10] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
+//    int br[10];
+//    int sum=0;
+//    for(int i = 0; i<=9; i++)
+//    {
+//    	sum+=ar[i];
+//	}
+//	printf("%d ", sum);
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	char ch1, ch2;
+//	
+//	ch1 = 'A';
+//	ch2 = 'a';
+//	printf("%c %c\n", ch1, ch2);
+//	printf("%d %d\n", ch1, ch2);
+//	
+//	printf("%c %c\n", 66, 98);
+//	printf("%d %d\n", 66, 98);
+//	
+//	printf("%c %c\n", 67, 99);
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	char ch1, ch2;
+//	
+//	ch1 = 'A';
+//	ch2 = 'a';
+//	
+//	ch1 = ch1 + 32;
+//	ch2 = ch2 - 32;
+//	
+//	printf("%c\n", ch1);
+//	printf("%c", ch2);
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	char ch;
+//	
+//	printf("문자를 입력하세요 :" );
+//	ch = getchar();
+//	putchar(ch);
+//	printf("%c %d\n", ch, ch);
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	char sentence[20];
+//	puts("단어를 입력하시오: ");
+//	gets(sentence);
+//	puts(sentence);
+//	printf("%s", sentence);
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	char ch1;
+//	scanf("%c", &ch1);
+//	if(ch1>=97 && ch1<=122)
+//	{
+//		printf("%c", ch1-32);
+//	}
+//	else if(ch1>=65 && ch1<=91);
+//	{
+//		printf("%c", ch1+32);
+//	}
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	for(int i = 65;i<=90;i++)
+//	{
+//		printf("%c ", i);
+//	}
+//	for(int u = 97;u<=122;u++)
+//	{
+//		printf("%c ", ch1+32);
+//	}
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	char word[20];
+//	scanf("%s", word);
+//	
+//	for(int i=0;i<5;i++)
+//	{
+//		printf("%c", word[i]-32);
+//	}
+//}
