@@ -1,0 +1,37 @@
+#include <stdio.h>
+//int main()
+//{
+//	int n, *p;
+//
+//	p = &n;
+//	*p = 70;
+//	
+//	printf("%d %d", n, *p);
+//}
+
+//int main()
+//{
+//	int ar[] = {11, 21, 31, 41, 51, 61, 71};
+//	int *p, *q, *r;
+//	
+//	p = ar;
+//	q = &ar[1];
+//	r = (ar+2);
+//	
+//	printf("%d %d\n", *p, ar[0]);
+//	printf("%d %d\n", *q, *(ar+1));
+//	printf("%d %d\n", *r, ar[2]);
+//}
+
+int main()
+{
+	char str[] = "Hello String";
+	char name[20] = "씨큐브코딩";  
+	char *p, *q;
+	
+	p = str;
+	q = name;
+	
+	printf("%d %d\n", str, name);
+	printf("%s %s\n", str, name);
+}
