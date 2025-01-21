@@ -1,0 +1,63 @@
+#include <stdio.h>
+
+struct Coordi
+{
+	int x;
+	int y;
+};
+
+int main()
+{
+	struct Coordi p1;
+	struct Coordi p2 = {5, 9};
+	struct Coordi p3;
+	struct Coordip4;
+	
+	p1.x = 2;
+	p1.y = 3;
+	
+	printf("p1의 좌표( %d , %d )\n", p1.x, p1.y);
+	printf("p1의 좌표( %d , %d )", p2.x, p2.y);zzzzzzzz
+}
+
+
+#include <stdio.h>
+#include <string.h>
+
+struct Person
+{
+	char name[10];
+	int age;
+	double height;
+ };
+ 
+ int main()
+ {
+ 	struct Person m1;
+ 	struct Person m2 = {"허난설헌", 13, 159.9};
+ 	
+ 	strcpy(m1.name, "허균");
+	m1.age = 19;
+	m1.height = 168.34; 
+ }
+
+
+struct Coordi
+{
+	int x;
+	int y;
+	
+};
+
+struct Circle
+{
+	struct Coordi cen;
+	double r;
+};
+
+int main()
+{
+	struct Circle c1;
+	struct Circle c2 = {{4, 5}, 12.4};
+	struct Circle c3;
+}
