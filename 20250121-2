@@ -1,0 +1,73 @@
+#include <stdio.h>
+
+//struct Coordi
+//{
+//	int x;
+//	int y;
+//};
+//
+//int main()
+//{
+//	struct Coordi p1;
+//	struct Coordi p2 = {5, 9};
+//	struct Coordi p3;
+//	struct Coordi p4;
+//	
+//	p1.x = 2;
+//	p1.y = 3;
+//	
+//	
+//	printf("p1의 좌표( %d , %d )\n", p1.x, p1.y);
+//	printf("p1의 좌표( %d , %d )", p2.x, p2.y);
+//}
+
+
+//struct Circle
+//{
+//	int x;
+//	int y;
+//	double r;
+//};
+//
+//int main()
+//{
+//	struct Circle c1, c2, c3, c4;
+//	
+//	c2.x = 2;
+//	c2.y = 3;
+//	c4.x = c2.y;
+//	c4.y = c2.x;
+//	printf("%d\n", c4.x);
+//	printf("%d", c4.y);
+//	
+//}
+
+
+#include <stdio.h>
+#include <string.h>
+
+struct Person
+{
+	char name[10];
+	int age;
+	double height;
+ };
+ 
+ int main()
+ {
+ 	struct Person m1;
+ 	struct Person m2 = {"허난설헌", 13, 159.9};
+ 	
+ 	strcpy(m1.name, "허균");
+	m1.age = 19;
+	m1.height = 168.34; 
+	
+	struct Person m4;
+	strcpy(m4.name, "김예준");
+	m4.age = 15;
+	m4.height = 168;
+	printf("%s\n", m4.name);
+	printf("%d\n", m4.age);
+	printf("%f", m4.height);
+
+ }
