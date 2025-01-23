@@ -1,0 +1,125 @@
+//#include <stdio.h>
+//#include <string.h>
+//struct Person
+//{
+//	char name[10];
+//	int age;
+//	double height;
+//};
+//
+//int main()
+//{
+//	struct Person m4;
+//	strcpy(m4.name, "김예준");
+//	m4.age = 15;
+//	m4.height = 168.1;
+//	printf("%s\n", m4.name);
+//	printf("%f\n", m4.height);
+//	printf("%d", m4.age);
+//}
+
+//#include <stdio.h>
+//#include <string.h>
+//struct Address
+//{
+//	char name[10];
+//	char phon[20];
+//	char home[50];
+//};
+//
+//int main()
+//{
+//
+//	struct Address man3;
+//	scanf("%s",man3.name);
+//	scanf("%s",man3.phon);
+//	scanf("%s",man3.home);
+//	
+//	printf("%s", man3.name);
+//	printf("%s", man3.phon);
+//	printf("%s", man3.home);
+//}
+
+
+//#include <stdio.h>
+//#include <string.h>
+//
+//struct Person
+//{
+//
+//	char name[10];
+//	int age;
+//	double height;
+//};
+//int main()
+//{
+//	struct Person list[5] = {{"김유신", 15, 178.3}, {"김춘추", 13, 173.3}, {"사다함", 17, 183.2},
+//	{"원효", 19, 168.9}, {"장보고",13, 187.3}};
+//	
+//	for(int i=0;i<=5;i++)
+//	{
+//		printf("이름: %s\n", list[i].name);
+//		printf("나이: %d\n", list[i].age);
+//		printf("키: %f\n", list[i].height);	
+//	}
+//	printf("\n");
+//}
+
+
+//#include <stdio.h>
+//#include <stdlib.h>
+//
+//int main()
+//{
+//	FILE *in = fopen("StringFile.txt", "r");
+//	char str1[30];
+//	char str2[30];
+//	char str3[30];
+//	
+//	if (in == NULL)
+//	{
+//		printf("파일 없음\n");
+//		exit(1);
+//	}
+//	
+//	fgets(str1, sizeof(str1), in);
+//	fgets(str2, sizeof(str2), in);
+//	fgets(str3, sizeof(str3), in);
+//	
+//	puts(str1);
+//	printf("%s", str2);
+//	
+//	fputs(str3, stdout);
+//	fclose(in);
+//}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+	FILE *out = fopen("NumberFile.txt", "w");
+	int n, m;
+	double d1, d2;
+	
+	if (out == NULL)
+	{
+		printf("파일없음\n");
+		exit(1);
+	}
+	
+	printf("정수를 두 개 입력하세요: ");
+	scanf("%d %d", &n, &m);
+	printf("실수를 두 개 입력하세요: ");
+	scanf("%lf %lf", &d1, &d2);
+	
+	printf("\n\n\n입력 받은 수들은 모두 출력되었습니다.\n");
+	printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n");
+	printf("왜 콘솔에서 찾으세요?");
+	
+	fprintf(out, "%d %d\n", n, m);
+	fprintf(out,"%.2lf %.2lf", d1, d2);
+	
+	fclose(out);
+}
