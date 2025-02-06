@@ -1,0 +1,105 @@
+//#include <stdio.h>
+//
+//int main()
+//{
+//	int n;
+//	
+//	scanf("%d", &n);
+//	printf("%d", n);
+// } 
+
+
+//#include <stdio.h>
+//int main()
+//{
+//	int a, b, c;
+//	
+//	scanf("%d", &a);
+//	printf("a = %d\n", a);
+//	scanf("%d %d", &a, &b);
+//	printf("a = %d b = %d\n", a, b);
+//	scanf("%d %d %d", &a, &b, &c);
+//	printf("a = %d b = %d c = %d\n", a, b, c);
+//}
+
+
+//#include <stdio.h>
+//int main()
+//{
+//	char ch;
+//	
+//	scanf("%c", &ch);
+//	printf("%c %d", ch, ch);
+//}
+
+
+//#include <stdio.h>
+//int main()
+//{
+//	char ch, ca, cr;
+//	
+//	scanf("%c", &ch);
+//	printf("ch = %c ch = %d\n", ch, ch);
+//	scanf("%c%c", &ch, &ca);
+//	printf("ch = %c ch = %d\n", ch, ch);
+//	printf("ca = %c ca = %d\n", ca, ca);
+//	scanf("%c%c%c", &ch, &ca, &cr);
+//	printf("ch = %c ch = %d\n", ch, ch);
+//	printf("ca = %c ca = %d\n", ca, ca);
+//	printf("cr = %c cr = %d\n", cr, cr);
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//	char str[80];
+//	
+//	gets(str);
+//	printf("%s\n", str);
+//	puts(str);
+//}
+
+
+//#include <stdio.h>
+//#include <conio.h>
+//int main()
+//{
+//	char ch;
+//	
+//	ch = getche();
+//	printf("\nch = %d : %c\n", ch, ch);
+//	putchar(ch);
+//}
+
+
+//#include <stdio.h>
+//#include <conio.h>
+//
+//int main()
+//{
+//	int n = 0;
+//	
+//	while (1)
+//	{
+//		printf("%d%c", n, 13);
+//		n++;
+//	}
+//}
+
+
+#include <stdio.h>
+#include <conio.h>
+
+int main()
+{
+	char c = 0;
+	
+	while (1)
+	{
+		scanf("%c", &c);
+		if(10==c)
+		{
+			break;
+		}
+	}
+}
