@@ -45,7 +45,7 @@
 //	pos.X = 40;
 //	pos.Y = 12;
 //	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
-//	printf("<-: 커서 시작위치(%d %d)", pos.X, pos.Y);
+//	printf("←: 커서 시작위치(%d %d)", pos.X, pos.Y);
 //	getch();
 //
 //	pos.X = 40;
@@ -82,7 +82,11 @@
 //#include <conio.h>
 //#include <windows.h>
 //
-//void GotoXY(int x, int y);
+//void GotoXY(int x, int y)
+//{
+//	COORD pos={x,y};
+//	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+//}
 //
 //int main()
 //{
@@ -97,7 +101,7 @@
 //		printf("좌표 : ");
 //		scanf("%d%d", &pos.X, &pos.Y);
 //		SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
-//		printf("%s", "@");
+//		printf("%s", " ♥");
 //		
 //		pos.X = 30;
 //		pos.Y = 24;
@@ -115,3 +119,169 @@
 //이 과정은 무한히 반복됩니다.
 //따라서 사용자가 입력하는 좌표에 계속해서 @ 기호가 표시되고,
 //이전의 "좌표 : " 메시지는 지워지기 때문에 화면이 깔끔하게 유지됩니다.
+
+
+//#include <stdio.h>
+//#include <conio.h>
+//#include <windows.h>
+
+//int main()
+//{
+//	int x, y;
+//	COORD pos;
+//	
+//	do
+//	{
+//		pos.X = 0;
+//		pos.Y = 0; 
+//		printf("커서 위치를 입력하세요 : ");
+//		scanf("%d %d", &pos.X, &pos.Y);
+//		SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+//		printf(" ☜®");
+//		
+//		
+//	} while (pos.X <= 80 && pos.Y <=24);
+// } 
+
+
+//#include <stdio.h>
+//#include <conio.h>
+//#include <windows.h>
+//
+//void GotoXY(int x, int y)
+//{
+//	COORD pos={x,y};
+//	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+//}
+//
+//int main()
+//{
+//	int i=0,j;
+//	do
+//	{
+//		GotoXY(0,0);
+//		printf("%d", i);
+//		Sleep(100);
+//		i++;
+//	}  while (1);
+//	
+// 
+//}
+
+
+
+//#include <stdio.h>
+//#include <conio.h>
+//#include <windows.h>
+//
+//void GotoXY(int x, int y)
+//{
+//	COORD pos={x,y};
+//	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+//}
+//
+//int main()
+//{
+//	int i;
+//	int s;
+//	
+//	printf("출력속도 : ");
+//	scanf("%d", &s);
+//	for (i = 1; i <= 10; i++)
+//	{
+//		GotoXY(40, i+1);
+//		printf("%d", i);
+//		Sleep(s*100);
+//	}
+//}
+
+
+//#include <stdio.h>
+//#include <conio.h>
+//#include <windows.h>
+//
+//void GotoXY(int x, int y)
+//{
+//	COORD pos={x,y};
+//	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+//}
+//
+//int main()
+//{
+//	int i;
+//	int s;
+//	int count = 0;
+//	printf("출력속도 : ");
+//	scanf("%d", &s);
+//	for (i = 10; i <= 100; i+=10)
+//	{
+//		count +=3;
+//		GotoXY(20+count, 4);
+//		printf("%d ", i);
+//		Sleep(s*100);
+//	}
+//}
+
+
+//#include <stdio.h>
+//#include <conio.h>
+//#include <windows.h>
+//
+//void GotoXY(int x, int y)
+//{
+//	COORD pos={x,y};
+//	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+//}
+//
+//int main()
+//{
+//	int i;
+//	int s;
+//	int count = 0;
+//	int counta = 0;
+//	printf("출력속도 : ");
+//	scanf("%d", &s);
+//	while (1)
+//	{
+//		if(counta==100)
+//		{
+//			break;
+//		}
+//		counta+=10;
+//		count++;
+//		GotoXY(40, 0+count);
+//		printf("%d", counta);
+//		Sleep(s*100);
+//	}
+//}
+
+
+//#include <stdio.h>
+//#include <conio.h>
+//#include <windows.h>
+//
+//void GotoXY(int x, int y)
+//{
+//	COORD pos={x,y};
+//	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+//}
+//
+//int main()
+//{
+//	int i;
+//	int s;
+//	int count = 999;
+//	printf("출력속도 : ");
+//	scanf("%d", &s);
+//	for (i = 18; i < 27; i++)
+//	{
+//		if(i==10)
+//		{
+//			break;
+//		}
+//		GotoXY(40, 28-i);
+//		printf("%d", count);
+//		count-=111;
+//		Sleep(s*100);
+//	}
+//}
