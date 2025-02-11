@@ -1,0 +1,81 @@
+//#include <stdio.h>
+//#include <conio.h>
+//#include <windows.h>
+//
+//int main()
+//{
+//	int x, y;
+//	COORD pos = {40, 12};
+//	
+//	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+//	printf("Hello C3coding");
+//	getch();
+//}
+
+
+//#include <stdio.h>
+//#include <conio.h>
+//#include <windows.h>
+//
+//int main()
+//{
+//	int x, y;
+//	COORD pos = {1, 0};
+//	
+//	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+//	printf("<-: 커서 시작위치(%d %d)", pos.X, pos.Y);
+//	getch();
+//
+//	pos.X = 10;
+//	pos.Y = 2;
+//	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+//	printf("<-: 커서 시작위치(%d %d)", pos.X, pos.Y);
+//	getch();
+//
+//	pos.X = 20;
+//	pos.Y = 5;
+//	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+//	printf("<-: 커서 시작위치(%d %d)", pos.X, pos.Y);
+//	getch();
+//
+//	pos.X = 40;
+//	pos.Y = 12;
+//	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+//	printf("<-: 커서 시작위치(%d %d)", pos.X, pos.Y);
+//	getch();
+//
+//	pos.X = 40;
+//	pos.Y = 24;
+//	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+//	printf("<-: 커서 시작위치(%d %d)", pos.X, pos.Y);
+//	getch();
+//}
+
+
+//#include <stdio.h>
+//#include <conio.h>
+//#include <windows.h>
+//
+//void GotoXY(int x, int y);
+//
+//int main()
+//{
+//	COORD pos;
+//	
+//	do
+//	{
+//		pos.X = 30;
+//		pos.Y = 24;
+//		SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+//		
+//		printf("좌표 : ");
+//		scanf("%d%d", &pos.X, &pos.Y);
+//		SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+//		printf("%s", "@");
+//		
+//		pos.X = 30;
+//		pos.Y = 24;
+//		SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+//		printf("                     ");
+//	 } while (1);   
+//}
