@@ -27,7 +27,7 @@
 //}
 
 
-#include <stdio.h>
+#include <stdio.h>  //지렁이게임&테트리스 기본 코드
 #include <conio.h>
 #include <windows.h>
 #define X_END 79
