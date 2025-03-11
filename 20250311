@@ -1,0 +1,115 @@
+##a = int(input())
+##if(a%2==0):
+##    print("even")
+##else:
+##    print("odd")
+
+##def number(n):
+##    if n % 2==0:
+##        return "even"
+##    else :
+##        return "odd"
+##
+##n = int(input())
+##print(number(n))
+
+
+##for i in range(10):
+##    print(i, end = '')
+
+##for i in range(1, 10):
+##    print(i, end = '')
+
+##for i in range(1, 10,2):
+##    print(i, end = '')
+
+##for i in range(1, 101):
+##    print(i, end = ' ')
+
+
+##def get_sum(n) :
+##    s = 0
+##    for i in range(n) :
+##        s += int(input())
+##    return s
+##
+##
+##n = int(input("Enter integer n : "))
+##
+##print("sum :", get_sum(n))
+
+
+##def get_max(n) :
+##    max = 0
+##    for i in range(n):
+##        a = int(input())
+##        if max < a:
+##            max = a
+##    return max
+
+
+##def warning():
+##    for _ in range(3) :
+##        print("Fire!")
+##warning()
+
+##def two_times() :
+##    for i in range(1, 10) :
+##        print("2 * %d = %d" % (i, 2 * i), end = ' ')
+##two_times()
+
+##def say(name) :
+##    print("Welcome,", name)
+##    return
+##say("minsu")
+
+##def A() :
+##    print(1)
+##    r = B()
+##    print(r)
+##def B() :
+##    print(2)
+##    return 3
+##A()
+##print(4)
+
+
+##def factorial(n) :
+##    if n == 1 :
+##        return 1
+##    else :
+##        return n * factorial(n-1)
+##
+##fac = factorial(4)
+##print("4! =", fac)
+
+
+##def season(s):
+##    if s >= 3 and s<=5:
+##        print("spring")
+##    elif s >= 6 and s<=8:
+##        print("summer")
+##    elif s >= 9 and s <= 11:
+##        print("fall")
+##    elif s == 12 or s==1 or s==2:
+##        print("winter")
+##
+##
+##
+##s = int(input())
+##season(s)
+
+
+def func_abs(n):
+    if n < 0:
+        print("%d"% (n*-1))
+    else :
+        print(n)
+
+
+
+
+
+
+n = int(input())
+func_abs(n)
