@@ -47,3 +47,37 @@ btn_rock.grid(row = 2, column = 1)
 btn_paper.grid(row = 2, column = 2)
 
 win.mainloop()
+
+
+
+from tkinter import *
+from random import *
+def change_image(user):
+    List = ["back.png", "front.png"]
+    coin = randint(0, 1)
+    coin_img = PhotoImage(file = List[coin])
+    lbl_coin['image'] = coin_img
+    lbl_coin.image = coin_img
+
+    if coin == user:
+        lbl_res["text"] = "win"
+    else:
+        lbl_res["text"] = "lose"
+        
+win = Tk()
+win.title = ("coin game")
+img = PhotoImage(file = "ready.png")
+lbl_coin = Label(win, image = img, relief = "solid")
+lbl_res = Label(win, text = "", width = 15,
+                font = ("consolas", 20, "bold"),
+                fg = "brown", bg = "lightyellow")
+#lbl_name1 = Label(win, text = "front", font = ("consolas", 20))
+#lbl_name2 = Label(win, text = "back", font = ("consolas", 20))
+btn_front = Button(win, text = "front", width = 15, font = ("consolas", 15), bg = "skyblue", command = lambda:change_image(0))
+btn_back = Button(win, text = "back", width = 15, font = ("consolas", 15), bg = "pink", command = lambda:change_image(1))
+
+lbl_coin.grid(row = 0, column = 0, columnspan =2)
+lbl_res.grid(row = 1, column = 0, columnspan =2)
+btn_front.grid(row=2, column=0)
+btn_back.grid(row=2, column=1)
+win.mainloop()
