@@ -1,0 +1,68 @@
+class Character:
+    def __init__(self,name,weapon):
+        self.name = name
+        self.weapon = weapon
+    def intro(self) :
+        print("Name :", self.name)
+        print("Weapon :",self.weapon)
+
+
+class Action(Character):
+    step = 0
+    def move_forward(self,n):
+        self.step += n        print("Current location is %d. "%(self.step))
+    def move_backward(self):
+          self.step -= n
+
+    def turn_right(self):
+
+    def turn_left(self):
+
+lugo = Action("Lugo","gun")
+lugo.intro()
+lugo.move_forward()
+
+##class Car:
+##    model = "BMW"
+##    color = "white"
+##
+##
+##bmw = Car()
+##benz = Car()
+##
+##benz.model = "Benz"
+##benz.color = "black"
+##
+##
+##print(bmw.model)
+##print(bmw.color)
+##
+##
+##print(benz.model)
+##print(benz.color)
+
+##class Car:
+##
+##    def __init__(self, model, color):
+##          self.model = model
+##          self.color = color
+##
+##    def info(self):
+##          print("Model:", self.model, ", Color:", self.color)
+##
+##bmw = Car("BMW", "white")
+##bmw.info()
+
+class Car:
+
+    def __init__(self, model, color):
+          self.model = model
+          self.color = color
+
+    def info(self):
+          print("Model:", self.model, ", Color:", self.color)
+
+bmw = Car("BMW", "white")
+bmw.info()
+benz = Car("Benz", "black")
+benz.info()
