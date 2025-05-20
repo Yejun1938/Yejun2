@@ -103,7 +103,7 @@ for i in range(10):
     canvas.create_line(x1, y1, x2, y2,width = 2)
     canvas.pack()
 
-canvas.create_oval(100, 400, 600, 300, fill = "blue")
+canvas.create_oval(100, 100, 400, 400, fill = "blue")
 
 win.mainloop()
 
